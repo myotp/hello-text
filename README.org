@@ -1,0 +1,3 @@
+* Run run run
+text = "Today's weather is absolutely fantastic! The clear blue skies, gentle breeze, and warm sunshine have made it an exceptionally delightful day. It's the kind of weather that lifts spirits and inspires outdoor activities. Truly, it's a perfect day to enjoy nature's beauty and soak up the sunshine."
+%{predictions: [%{label: "joy", score: _}]} = Nx.Serving.batched_run(MyTextClassification.Serving, text)
